@@ -33,7 +33,6 @@
       }
       .container div {
         margin-bottom: 20px;
-        /* border: 1px solid; */
         display: flex;
         align-items: center;
       }
@@ -51,6 +50,11 @@
       .radio {
         margin: 0 5px;
         padding: 0;
+      }
+      .select {
+        padding: 5px;
+        outline: none;
+        border: none;
       }
     </style>
   </head>
@@ -85,7 +89,7 @@
         </div>
         <div>
           <label for="Language">Language:</label>
-          <select name="Language" id="Language">
+          <select name="Language" id="Language" class="select">
             <option value="" selected disabled hidden>Choose Language</option>
             <option value="English">English</option>
             <option value="Vietnamese">Vietnamese</option>
