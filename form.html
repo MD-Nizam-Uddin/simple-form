@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #a22b55;
+      }
+      .container {
+        width: 310px;
+        background-color: #75203f;
+        height: 400px;
+        padding: 20px 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+
+      .container label {
+        width: 108px;
+        float: left;
+      }
+      .input_field {
+        width: 200px;
+        border: none;
+        outline: none;
+        padding: 5px 0;
+      }
+      .container div {
+        margin-bottom: 20px;
+        /* border: 1px solid; */
+        display: flex;
+        align-items: center;
+      }
+      .btn {
+        width: 10rem;
+        padding: 8px 0;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 15px;
+      }
+      .radio {
+        margin: 0 5px;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" class="input_field" placeholder=" Enter Your Name" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" class="input_field" placeholder=" Enter Your Email" />
+        </div>
+        <div>
+          <label for="password" id="password">Password:</label>
+          <input type="password" name="password" id="password" class="input_field" placeholder="Password" />
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="text" name="phone" id="phone" class="input_field" />
+        </div>
+
+        <div>
+          <label for="gender">Gender:</label>
+          <span>Male:</span>
+          <input type="radio" class="radio" />
+          <span>Female:</span>
+          <input type="radio" class="radio" />
+          <span>Others:</span>
+          <input type="radio" class="radio" />
+        </div>
+        <div>
+          <label for="Language">Language:</label>
+          <select name="Language" id="Language">
+            <option value="" selected disabled hidden>Choose Language</option>
+            <option value="English">English</option>
+            <option value="Vietnamese">Vietnamese</option>
+            <option value="Japanese">Japanese</option>
+          </select>
+        </div>
+        <div>
+          <label for="zipCode">Zip Code:</label>
+          <input type="text" name="zipCode" id="zipCode" class="input_field" />
+        </div>
+        <div>
+          <label for="about">About:</label>
+          <textarea name="about" id="about" class="input_field" placeholder="About Yourself"></textarea>
+        </div>
+        <div style="text-align: center">
+          <input type="submit" value="Register" class="btn" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
